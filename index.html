@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +12,7 @@
 
     <link href="public/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/components/jplayer/skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet">
+    <link href="public/css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -23,53 +23,91 @@
 
 <body>
 
-<div class="container">
-
-    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-
-    <div id="jp_container_1" class="jp-audio-stream">
-        <div class="jp-type-single">
-            <div class="jp-gui jp-interface">
-                <ul class="jp-controls">
-                    <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
-                    <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
-                    <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-                    <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
-                    <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
-                </ul>
-                <div class="jp-volume-bar">
-                    <div class="jp-volume-bar-value"></div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="sidebar-nav">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".sidebar-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="visible-xs navbar-brand">Sidebar menu</span>
                 </div>
-            </div>
-            <div class="jp-details">
-                <ul>
-                    <li><span class="jp-title"></span></li>
-                </ul>
-            </div>
-            <div class="jp-no-solution">
-                <span>Update Required</span>
-                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Menu Item 1</a></li>
+                        <li><a href="#">Menu Item 2</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Menu Item 4</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
             </div>
         </div>
     </div>
+    <div class="col-sm-9">
 
 
+        <div id="logo">
+            <h1>The Vapers Lounge FM</h1>
+        </div>
 
-    <div class="starter-template">
-        <h1>WIP</h1>
-        <p class="lead">Just started, calm your tits!</p>
+        <div id="jquery_jplayer_1" class="jp-jplayer undraggable"></div>
+        <div id="jp_container_1" class="jp-audio-stream undraggable">
+            <div class="jp-type-single undraggable">
+                <div class="jp-gui jp-interface undraggable">
+                    <ul class="jp-controls undraggable">
+                        <li><a href="javascript:;" class="jp-play undraggable" tabindex="1">play</a></li>
+                        <li><a href="javascript:;" class="jp-pause undraggable" tabindex="1">pause</a></li>
+                        <li><a href="javascript:;" class="jp-mute undraggable" tabindex="1" title="mute">mute</a>
+                        </li>
+                        <li><a href="javascript:;" class="jp-unmute undraggable" tabindex="1"
+                               title="unmute">unmute</a></li>
+                        <!--<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>-->
+                    </ul>
+                    <div class="jp-volume-bar undraggable">
+                        <div class="jp-volume-bar-value undraggable"></div>
+                    </div>
+                </div>
+                <!--<div class="jp-details">-->
+                <!--<ul>-->
+                <!--<li><span class="jp-title"></span></li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <div class="jp-no-solution">
+                    <span>Update Required</span>
+                    To play the media you will need to either update your browser to a recent version or update your
+                    <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-</div><!-- /.container -->
-
-
+<!--END OF SITE-->
 <script src="public/components/jquery/dist/jquery.min.js"></script>
 <script src="public/components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="public/components/jplayer/jquery.jplayer/jquery.jplayer.js"></script>
 
 <script type="text/javascript">
 
-    $(document).ready(function(){
+    $(document).ready(function () {
 
         var stream = {
                     title: "The Vapers Lounge",
@@ -82,11 +120,11 @@
                 ready = true;
                 $(this).jPlayer("setMedia", stream);
             },
-            pause: function() {
+            pause: function () {
                 $(this).jPlayer("clearMedia");
             },
-            error: function(event) {
-                if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
+            error: function (event) {
+                if (ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
                     // Setup the media stream again and play it.
                     $(this).jPlayer("setMedia", stream).jPlayer("play");
                 }

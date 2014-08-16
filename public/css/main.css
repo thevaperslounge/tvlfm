@@ -1,0 +1,55 @@
+/*GLOBAL*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+}
+
+#logo {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.undraggable {
+    -WEBKIT-USER-SELECT: NONE; /* SAFARI, CHROME */
+    -KHTML-USER-SELECT: NONE; /* KONQUEROR */
+    -MOZ-USER-SELECT: NONE; /* FIREFOX */
+    -MS-USER-SELECT: NONE; /* IE */
+    USER-SELECT: NONE; /* CSS3 */
+}
+
+div.jp-interface, div.jp-audio, div.jp-audio-stream, div.jp-video {
+    background: none;
+    border: none;
+}
+
+div.jp-audio-stream, div.jp-audio-stream ul.jp-controls {
+    width: 100%;
+}
+
+div.jp-audio-stream div.jp-volume-bar {
+    width: 65%;
+}
+
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+        padding: 0;
+        max-height: none;
+    }
+    .sidebar-nav .navbar ul {
+        float: none;
+    }
+    .sidebar-nav .navbar ul:not {
+        display: block;
+    }
+    .sidebar-nav .navbar li {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
