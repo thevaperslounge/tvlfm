@@ -13,6 +13,8 @@ body {
 .navbar-inverse {
     background-color: #3c3c3c;
     border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -35,8 +37,8 @@ body {
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-    background-color: #333;
-    color: #16a085;
+    background-color: transparent;
+    color: #ecf0f1;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
@@ -61,10 +63,10 @@ body {
 
 /*PLAYER*/
 
-.player h3 {
-    margin: 0;
-    padding-left: 20px;
-}
+/*.player h3 {*/
+    /*margin: 0;*/
+    /*padding-left: 20px;*/
+/*}*/
 
 div.jp-volume-bar-value {
     background: #16a085;
@@ -87,12 +89,12 @@ div.jp-interface, div.jp-audio, div.jp-audio-stream, div.jp-video {
     /*height: auto;*/
 /*}*/
 
-div.jp-audio-stream, div.jp-audio-stream ul.jp-controls {
-    width: 100%;
-}
+/*div.jp-audio-stream, div.jp-audio-stream ul.jp-controls {*/
+    /*width: 100%;*/
+/*}*/
 
-div.jp-audio-stream div.jp-volume-bar {
-    width: 65%;
-}
+/*div.jp-audio-stream div.jp-volume-bar {*/
+    /*width: 65%;*/
+/*}*/
 
 
