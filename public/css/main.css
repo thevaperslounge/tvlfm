@@ -4,11 +4,70 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 2em;
+    margin-top: 70px;
+    background-color: #ecf0f1;
 }
+
+
+/*NAV*/
+.navbar-inverse {
+    background-color: #3c3c3c;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    /*font-size: 1.3em;*/
+    /*font-weight: 700;*/
+}
+
+.navbar-inverse .navbar-brand {
+    color: #1abc9c;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: #16a085;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #1abc9c;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    background-color: #333;
+    color: #16a085;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #16a085;
+}
+
+/*heading*/
+
 
 #logo {
     text-align: center;
     text-transform: uppercase;
+}
+#logo h1 {
+    font-weight: 700;
+}
+
+#persistant-menu {
+    margin-bottom: 50px;
+}
+
+
+/*PLAYER*/
+
+.player h3 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+div.jp-volume-bar-value {
+    background: #16a085;
 }
 
 .undraggable {
@@ -24,6 +83,10 @@ div.jp-interface, div.jp-audio, div.jp-audio-stream, div.jp-video {
     border: none;
 }
 
+/*div.jp-audio-stream div.jp-type-single div.jp-interface {*/
+    /*height: auto;*/
+/*}*/
+
 div.jp-audio-stream, div.jp-audio-stream ul.jp-controls {
     width: 100%;
 }
@@ -32,24 +95,4 @@ div.jp-audio-stream div.jp-volume-bar {
     width: 65%;
 }
 
-/* make sidebar nav vertical */
-@media (min-width: 768px) {
-    .sidebar-nav .navbar .navbar-collapse {
-        padding: 0;
-        max-height: none;
-    }
-    .sidebar-nav .navbar ul {
-        float: none;
-    }
-    .sidebar-nav .navbar ul:not {
-        display: block;
-    }
-    .sidebar-nav .navbar li {
-        float: none;
-        display: block;
-    }
-    .sidebar-nav .navbar li a {
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-}
+
