@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400);
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 
 /*HEADER*/
@@ -9,7 +9,6 @@
     text-align: center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 400px;
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -43,17 +42,12 @@
 }
 
 #headerwrap .logoSubText {
+    font-weight: 300;
     font-size: 3.5em;
     color: white;
     margin-bottom: 50px;
 }
 
-#headerwrap .btn-default {
-    font-weight: 700;
-    border-radius: 20px;
-    color: #000000;
-    margin-bottom: 55px;
-}
 
 /*MAIN*/
 
@@ -74,21 +68,21 @@
     padding: 20px;
 }
 
-.scheduleItem:nth-child(even){
+.scheduleItem:nth-child(even) {
     background-color: #BBC3DA;
 }
 
 .scheduleItem h1 {
     font-size: .8em;
-    float:left;
+    float: left;
     text-transform: uppercase;
     margin-top: 0;
 }
 
 .scheduleItem h2 {
     font-size: 1em;
-    clear:both;
-font-weight: 700;
+    clear: both;
+    font-weight: 700;
 }
 
 .scheduleItem p {
@@ -98,7 +92,7 @@ font-weight: 700;
 /*CHAT*/
 
 .chatBox {
-    padding-left: 20px;
+    padding-left: 0;
     padding-right: 20px;
 }
 
@@ -109,9 +103,14 @@ font-weight: 700;
 }
 
 #appad img {
-    margin-top: -20px;
+    margin-top: -30px;
     max-height: 500px;
 }
+
+#appad .subHeading {
+    margin-bottom: 50px;
+}
+
 /*PLAYER*/
 .listenNow, .player {
     float: left;
@@ -120,6 +119,21 @@ font-weight: 700;
 .player div.jp-audio, div.jp-audio-stream, div.jp-video, .player div.jp-interface {
     background: transparent;
     border: none;
+}
+
+/*ABOUT*/
+
+#about {
+    background-color: #AC3A6B;
+}
+
+#about h2 {
+    text-transform: uppercase;
+    color: #FFD761;
+}
+
+#about p {
+    color: white;
 }
 
 /*UTILS*/
@@ -138,4 +152,23 @@ font-weight: 700;
 
 .white {
     color: #ffffff;
+}
+
+.heading {
+    margin-top: 70px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.subHeading {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+
+.btn-default {
+    font-weight: 700;
+    border-radius: 20px;
+    color: #000000;
+    margin-bottom: 50px;
 }
