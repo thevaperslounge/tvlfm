@@ -90,6 +90,13 @@
 font-weight: 700;
 }
 
+/*CHAT*/
+
+.chatBox {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /*APP ADVERT*/
 
 #appad {
