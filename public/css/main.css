@@ -1,100 +1,125 @@
-/*GLOBAL*/
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 
-body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2em;
-    margin-top: 70px;
-    background-color: #ecf0f1;
-}
-
-
-/*NAV*/
-.navbar-inverse {
-    background-color: #3c3c3c;
-    border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    /*font-size: 1.3em;*/
-    /*font-weight: 700;*/
-}
-
-.navbar-inverse .navbar-brand {
-    color: #1abc9c;
-    font-size: 1.4em;
-    font-weight: 700;
-}
-
-.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-    color: #16a085;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #1abc9c;
-}
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-    background-color: #1abc9c;
-    color: #3c3c3c;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-    color: #16a085;
-}
-
-/*heading*/
-
-
-#logo {
+/*HEADER*/
+#headerwrap {
+    background: url(../img/clouds.jpg) no-repeat center top;
+    margin-top: 0px;
+    padding-top: 80px;
     text-align: center;
-    text-transform: uppercase;
-}
-#logo h1 {
-    font-weight: 700;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 400px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 1170px;
+
+    /*OPTIONAL*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#persistant-menu {
+#headerwrap .logoText {
+    margin-bottom: 70px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+#headerwrap span.black {
+    color: #293567;
+}
+
+#headerwrap span.red {
+    color: #AC3B6C;
+}
+
+#headerwrap .logoSubText {
+    font-size: 3.5em;
+    color: white;
     margin-bottom: 50px;
 }
 
+#headerwrap .btn-default {
+    font-weight: 700;
+    border-radius: 20px;
+    color: #000000;
+    margin-bottom: 55px;
+}
+
+/*MAIN*/
+
+#main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*height: 500px;*/
+}
+
+.mainTitles {
+    font-size: 1.8em;
+    color: #6674A5;
+    margin-bottom: 40px;
+}
+
+.scheduleItem {
+    background-color: #ADB6D5;
+    padding: 20px;
+}
+
+.scheduleItem:nth-child(even){
+    background-color: #BBC3DA;
+}
+
+.scheduleItem h1 {
+    font-size: .8em;
+    float:left;
+    text-transform: uppercase;
+}
+
+.scheduleItem h2 {
+    font-size: 1em;
+    clear:both;
+font-weight: 700;
+}
+
+/*APP ADVERT*/
+
+#appad {
+    background-color: #C0C7DA;
+}
 
 /*PLAYER*/
-
-/*.player h3 {*/
-    /*margin: 0;*/
-    /*padding-left: 20px;*/
-/*}*/
-
-div.jp-volume-bar-value {
-    background: #16a085;
+.listenNow, .player {
+    float: left;
 }
 
-.undraggable {
-    -WEBKIT-USER-SELECT: NONE; /* SAFARI, CHROME */
-    -KHTML-USER-SELECT: NONE; /* KONQUEROR */
-    -MOZ-USER-SELECT: NONE; /* FIREFOX */
-    -MS-USER-SELECT: NONE; /* IE */
-    USER-SELECT: NONE; /* CSS3 */
-}
-
-div.jp-interface, div.jp-audio, div.jp-audio-stream, div.jp-video {
-    background: none;
+.player div.jp-audio, div.jp-audio-stream, div.jp-video, .player div.jp-interface {
+    background: transparent;
     border: none;
 }
 
-/*div.jp-audio-stream div.jp-type-single div.jp-interface {*/
-    /*height: auto;*/
-/*}*/
+/*UTILS*/
 
-/*div.jp-audio-stream, div.jp-audio-stream ul.jp-controls {*/
-    /*width: 100%;*/
-/*}*/
+.thin {
+    font-family: 'Quicksand', sans-serif;
+}
 
-/*div.jp-audio-stream div.jp-volume-bar {*/
-    /*width: 65%;*/
-/*}*/
+.tall {
+    font-family: 'Oswald', sans-serif;
+}
 
+.center {
+    text-align: center;
+}
 
+.white {
+    color: #ffffff;
+}
