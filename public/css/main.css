@@ -82,12 +82,17 @@
     font-size: .8em;
     float:left;
     text-transform: uppercase;
+    margin-top: 0;
 }
 
 .scheduleItem h2 {
     font-size: 1em;
     clear:both;
 font-weight: 700;
+}
+
+.scheduleItem p {
+    margin-bottom: 0;
 }
 
 /*CHAT*/
@@ -103,6 +108,10 @@ font-weight: 700;
     background-color: #C0C7DA;
 }
 
+#appad img {
+    margin-top: -20px;
+    max-height: 500px;
+}
 /*PLAYER*/
 .listenNow, .player {
     float: left;
