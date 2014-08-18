@@ -209,6 +209,26 @@
     color: white;
 }
 
+/*FOOTER*/
+
+#footer {
+    background-color: #333333;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer h3 {
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+}
+
+#footer a {
+color: #FFD95E;
+    text-decoration: none;
+}
+
 /*MODAL*/
 .modal-header {
     border: none;
