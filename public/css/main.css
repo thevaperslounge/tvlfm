@@ -254,6 +254,9 @@ div.jp-audio-stream ul.jp-controls {
     color: white;
 }
 
+#about a {
+    color: #FFD761;
+}
 /*FOOTER*/
 
 #footer {
