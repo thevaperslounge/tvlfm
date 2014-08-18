@@ -199,7 +199,7 @@ div.jp-audio-stream ul.jp-controls {
 }
 
 #appad .subHeading {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 #appad a {
@@ -220,6 +220,7 @@ div.jp-audio-stream ul.jp-controls {
 @media (min-width: 768px) {
     #appad .btn-default {
         display: block;
+        margin-bottom: 5px;
 
     }
 }
