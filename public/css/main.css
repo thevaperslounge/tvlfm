@@ -74,7 +74,9 @@ div.jp-audio-stream ul.jp-controls {
 .scheduleItem {
     background-color: #ADB6D5;
 }
-
+.scheduleItem a {
+    color: #ffffff;
+}
 @media (max-width: 767px) {
     .scheduleItem {
         padding: 12px;

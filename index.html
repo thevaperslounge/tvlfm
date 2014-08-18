@@ -27,13 +27,13 @@
 <div id="headerwrap">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <!--<div class="col-md-6 col-md-offset-3">-->
                 <h1 class="logoText">THE<span class="black">VAPERS</span><span class="red">LOUNGE</span>RADIO</h1>
 
                 <h1 class="logoSubText thin">where music makes clouds</h1>
 
                 <a href="#about" class="btn btn-default">LEARN MORE</a>
-            </div>
+            <!--</div>-->
         </div>
         <!-- --/row ---->
     </div>
@@ -148,7 +148,7 @@
 
                         <h2>7-9pm GMT</h2>
 
-                        <p>Dan from Drippa.co.uk plays an eclectic mix of flavours and brings us vaping news and a few
+                        <p>Dan from <a href="http://drippa.co.uk" target="_blank">Drippa.co.uk</a> plays an eclectic mix of flavours and brings us vaping news and a few
                             giveaways.</p>
                     </div>
                     <div class="row scheduleItem">
@@ -301,7 +301,7 @@
             ready: function (event) {
                 ready = true;
                 $(this).jPlayer("setMedia", stream)
-//                        .jPlayer("play");
+                        .jPlayer("play");
             },
             pause: function () {
                 $(this).jPlayer("clearMedia");
