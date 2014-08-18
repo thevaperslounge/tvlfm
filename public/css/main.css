@@ -66,9 +66,29 @@
 
 .scheduleItem {
     background-color: #ADB6D5;
-    padding: 37px;
 }
 
+@media (max-width:767px) {
+    .scheduleItem {
+        padding: 12px;
+    }
+}
+@media (min-width:768px) {
+    .scheduleItem {
+        padding: 13.5px;
+    }
+}
+@media(min-width:992px){
+    .scheduleItem {
+        padding: 26.6px;
+    }
+}
+
+@media(min-width:1200px){
+    .scheduleItem {
+        padding: 37px;
+    }
+}
 .scheduleItem:nth-child(even) {
     background-color: #BBC3DA;
 }
