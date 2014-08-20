@@ -1,6 +1,30 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400);
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 
+@font-face{ font-family: 'BebasNeue-webfont';
+    src: url('../font/bebasneue_regular_macroman/BebasNeue-webfont.eot');
+    src: url('../font/bebasneue_regular_macroman/BebasNeue-webfont.eot?iefix') format('eot'),
+    url('../font/bebasneue_regular_macroman/BebasNeue-webfont.woff') format('woff'),
+    url('../font/bebasneue_regular_macroman/BebasNeue-webfont.ttf') format('truetype'),
+    url('../font/bebasneue_regular_macroman/BebasNeue-webfont.svg#webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'chaletmedium';
+    src: url('../font/chaletparisnineteensixty-webfont/chaletparisnineteensixty-webfont-webfont.eot');
+    src: url('../font/chaletparisnineteensixty-webfont/haletparisnineteensixty-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/chaletparisnineteensixty-webfont/chaletparisnineteensixty-webfont-webfont.woff') format('woff'),
+         url('../font/chaletparisnineteensixty-webfont/chaletparisnineteensixty-webfont-webfont.ttf') format('truetype'),
+         url('../font/chaletparisnineteensixty-webfont/chaletparisnineteensixty-webfont-webfont.svg#chaletmedium') format('svg');
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+
+}
+
+body {
+    color: #2a336c;
+}
+
 /*HEADER*/
 #headerwrap {
     background: url(../img/clouds.jpg) no-repeat center top;
@@ -27,7 +51,8 @@
 
 #headerwrap .logoText {
     margin-bottom: 70px;
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'BebasNeue-webfont', Arial, sans-serif;
     color: white;
     font-size: 2.5em;
     font-weight: 800;
@@ -85,19 +110,19 @@ div.jp-audio-stream ul.jp-controls {
 
 @media (min-width: 768px) {
     .scheduleItem {
-        padding: 13.5px;
+        padding: 10.5px;
     }
 }
 
 @media (min-width: 992px) {
     .scheduleItem {
-        padding: 26.6px;
+        padding: 23.5px;
     }
 }
 
 @media (min-width: 1200px) {
     .scheduleItem {
-        padding: 37px;
+        padding: 33.6px;
     }
 }
 
@@ -106,7 +131,7 @@ div.jp-audio-stream ul.jp-controls {
 }
 
 .scheduleItem h1 {
-    font-size: .8em;
+    font-size: 1.2em;
     float: left;
     text-transform: uppercase;
     margin-top: 0;
@@ -116,6 +141,7 @@ div.jp-audio-stream ul.jp-controls {
     font-size: 1em;
     clear: both;
     font-weight: 700;
+
 }
 
 .scheduleItem p {
@@ -306,11 +332,14 @@ div.jp-audio-stream ul.jp-controls {
 /*UTILS*/
 
 .thin {
-    font-family: 'Quicksand', sans-serif;
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'chaletmedium', sans-serif;
+    font-weight: 100;
 }
 
 .tall {
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'BebasNeue-webfont', sans-serif;
 }
 
 .center {
